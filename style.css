@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Noto Sans Light';
+    src: url('./fonts/NotoSansLight/NotoSans-Light.eot');
+    src: url('./fonts/NotoSansLight/NotoSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/NotoSansLight/NotoSans-Light.woff2') format('woff2'),
+        url('./fonts/NotoSansLight/NotoSans-Light.woff') format('woff'),
+        url('./fonts/NotoSansLight/NotoSans-Light.ttf') format('truetype'),
+        url('./fonts/NotoSansLight/NotoSans-Light.svg#NotoSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans Extra Light';
+    src: url('./fonts/NotoSansExtraLight/NotoSans-ExtraLight.eot');
+    src: url('./fonts/NotoSansExtraLight/NotoSans-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/NotoSansExtraLight/NotoSans-ExtraLight.woff2') format('woff2'),
+        url('./fonts/NotoSansExtraLight/NotoSans-ExtraLight.woff') format('woff'),
+        url('./fonts/NotoSansExtraLight/NotoSans-ExtraLight.ttf') format('truetype'),
+        url('./fonts/NotoSansExtraLight/NotoSans-ExtraLight.svg#NotoSans-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    justify-content: center ;
+}
+
+.application {
+    display : grid ;
+    justify-content : center ;
+    align-content : center ;
+    justify-items : center ;
+    align-items : center ;
+
+    margin-top : 50px ;
+
+    background-color : #FBFBFB ;
+    border-radius : 25px ;
+}
+
+.heading {
+    display : grid ;
+    grid-template-columns : auto auto ;
+    grid-template-rows : auto ;
+    grid-gap : 25px ;
+    justify-content : center ;
+    align-content : center ;
+    justify-items : center ;
+    align-items : center ;
+
+    width : 1024px ;
+    padding : 25px 0 ;
+
+    background-color : #EFEFEF ;
+    border-radius : 25px ;
+}
+
+.inputText {
+    width : 774px ;
+    padding : 7px 25px ;
+    border: 1px solid #EFEFEF;
+    border-radius : 25px ;
+    font-size : 25px ;
+    line-height : 34px ;
+    font-family : 'Noto Sans Light' ;
+    background-color : white ;
+    outline : none ;
+}
+.inputText:focus {
+    border : 1px solid #18FFFF ;
+}
+
+.buttonAdd {
+    background-color : white ;
+    border: 1px solid #EFEFEF;
+    border-radius : 25px ;
+    font-size : 25px ;
+    line-height : 34px ;
+    font-family : 'Noto Sans Extra Light' ;
+    outline : none ;
+
+    width : 177px ;
+    padding : 8px 25px ;
+    word-wrap: break-word;
+    word-break : break-all ;
+}
+.buttonAdd:focus {
+    border : 1px solid #18FFFF ;
+}
+
+.textDecoration__line-through {
+    text-decoration: line-through ;
+}
+
+.wrapNewItem {
+    display : grid ;
+    grid-template-columns : 1fr 1fr ;
+    align-items : center ;
+    justify-items : center ;
+    width : 1024px ;
+}
+
+.line {
+    grid-column-start : 1 ;
+    grid-column-end : 3 ;
+
+    width : 924px ;
+    height : 1px ;
+    background-color : black ;
+}
+
+.itemValue {
+    font-size : 20px ;
+    line-height : 27px ;            
+    font-family : 'Noto Sans Light' ;      
+    width : 674px ;            
+    margin-top : 31px ;            
+    margin-bottom : 32px ;            
+    margin-left : 100px ;            
+    word-wrap: break-word;            
+    word-break : break-all ;            
+}
